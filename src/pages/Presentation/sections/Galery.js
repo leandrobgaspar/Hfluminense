@@ -40,8 +40,8 @@ function Galery() {
             Veja algumas imagens do nosso hospital
           </MKTypography>
           <MKTypography variant="body2" color="text">
-            If you can&apos;t decide, the answer is no. If two equally difficult paths, choose the
-            one more painful in the short term (pain avoidance is creating an illusion of equality).
+            As imagens são atualizadas toda semana, para manter uma transparência melhor para todos
+            que nos acompanham
           </MKTypography>
         </Grid>
         <Grid container spacing={3} minHeight="70vh">
