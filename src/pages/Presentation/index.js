@@ -27,6 +27,7 @@ import bgImage from "assets/images/bg-presentation.jpg";
 import logoHF from "assets/images/logoHF.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import MKButton from "components/MKButton";
+import Trabalhe from "./sections/Trabalhe";
 
 function Presentation() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -349,6 +350,16 @@ function Presentation() {
                 </MKTypography>
               </AnchorLink>
             </Box>
+            <MKButton
+              type="submit"
+              href="#Trabalhe"
+              variant="gradient"
+              color="info"
+              sx={{ mr: 2 }}
+              mx={0}
+            >
+              Trabalhe Conosco
+            </MKButton>
             <MKButton type="submit" href="#Contato" variant="gradient" color="info" mx={0}>
               Contato
             </MKButton>
@@ -467,6 +478,9 @@ function Presentation() {
         </section>
         <section id="Contato">
           <Contato />
+        </section>
+        <section id="Trabalhe">
+          <Trabalhe />
         </section>
         <MKBox pt={18} pb={6}>
           <Container>

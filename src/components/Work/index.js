@@ -14,6 +14,7 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
+import * as React from "react";
 import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
@@ -21,25 +22,46 @@ import MKBox from "components/MKBox";
 import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
-
-// Image
-import bgContato from "assets/images/illustrations/bgContato.jpg";
+import axios from "axios";
 
 function ContactUs() {
+  const [campos, setCampos] = React.useState({
+    name: "",
+    email: "",
+    message: "",
+    anexo: "",
+  });
+
+  function handleInputChange(event) {
+    if (event.target.name === "anexo") campos[event.target.name] = event.target.files[0];
+    else campos[event.target.name] = event.target.value;
+    setCampos(campos);
+  }
+
+  function send() {
+    const formData = new FormData();
+    Object.keys(campos).forEach((key) => formData.append(key, campos[key]));
+    axios
+      .post("http://localhost:3030/send", formData, {
+        headers: {
+          "Content-Type": `multipart/form-data; boundary=${formData.boundary}`,
+        },
+      })
+      .then((response) => {
+        console.log(response.data);
+        alert("Email enviado com sucesso!");
+      });
+  }
+
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    console.log(campos);
+    send(campos);
+  }
+
   return (
     <>
       <Grid container spacing={3} alignItems="center">
-        <Grid item xs={12} lg={6}>
-          <MKBox
-            display={{ xs: "none", lg: "flex" }}
-            width="calc(100% - 2rem)"
-            height="calc(100vh - 2rem)"
-            borderRadius="lg"
-            ml={2}
-            mt={2}
-            sx={{ backgroundImage: `url(${bgContato})`, backgroundSize: "cover" }}
-          />
-        </Grid>
         <Grid
           item
           xs={12}
@@ -70,7 +92,7 @@ function ContactUs() {
               mt={-3}
             >
               <MKTypography variant="h3" color="white">
-                Contate-nos
+                Trabalhe conosco
               </MKTypography>
             </MKBox>
             <MKBox p={3}>
@@ -78,34 +100,56 @@ function ContactUs() {
                 Para informações, entre em contato conosco, mande um email para
                 sac@hospitalfluminense.com.br ou preencha o formulário abaixo.
               </MKTypography>
-              <MKBox width="100%" component="form" method="post" autocomplete="off">
+              <MKBox width="100%" component="form" onSubmit={handleFormSubmit} autocomplete="off">
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={6}>
                     <MKInput
-                      variant="standard"
+                      variant="outlined"
                       label="Nome Completo"
                       InputLabelProps={{ shrink: true }}
                       fullWidth
+                      onChange={handleInputChange}
+                      name="nome"
+                      id="nome"
                     />
                   </Grid>
                   <Grid item xs={12} md={6}>
                     <MKInput
                       type="email"
-                      variant="standard"
+                      variant="outlined"
                       label="E-mail"
                       InputLabelProps={{ shrink: true }}
                       fullWidth
+                      onChange={handleInputChange}
+                      name="email"
+                      id="email"
                     />
                   </Grid>
                   <Grid item xs={12}>
                     <MKInput
-                      variant="standard"
+                      variant="outlined"
                       label="Mensagem"
                       placeholder="Escreva aqui sua Mensagem com no máximo 250 caracteres."
                       InputLabelProps={{ shrink: true }}
                       multiline
                       fullWidth
                       rows={6}
+                      onChange={handleInputChange}
+                      name="mensagem"
+                      id="mensagem"
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <MKInput
+                      variant="outlined"
+                      justifyContent="center"
+                      label="Upload de arquivos"
+                      InputLabelProps={{ shrink: true }}
+                      fullWidth
+                      type="file"
+                      onChange={handleInputChange}
+                      name="anexo"
+                      id="anexo"
                     />
                   </Grid>
                 </Grid>
