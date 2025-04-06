@@ -1,94 +1,13 @@
 // Material UI
 import * as React from "react";
-import { useState } from "react";
-import {
-  Alert,
-  AlertTitle,
-  Button,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  IconButton,
-} from "@mui/material";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import CloseIcon from "@mui/icons-material/Close";
 
 function Presentation() {
-  const [open, setOpen] = useState(false);
-
-  const abrirModal = () => {
-    setOpen(true);
-  };
-
-  const fecharModal = () => {
-    setOpen(false);
-  };
-
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-900 text-white p-4 space-y-10 md:space-y-0 md:space-x-10">
-        {/* Texto e botões */}
-        <div className="text-center md:text-left space-y-6">
-          <div className="flex justify-center md:justify-start mb-6">
-            <AccessTimeIcon className="text-blue-500" style={{ fontSize: 48 }} />
-          </div>
-
-          <h1 className="text-4xl font-bold">Em Manutenção</h1>
-
-          <p className="text-gray-300 max-w-md">
-            Estamos passando por uma manutenção programada. Voltaremos em breve com novidades!
-          </p>
-
-          {/* Botão que abre o modal */}
-          <div>
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={abrirModal}
-              className="font-semibold rounded-lg shadow-md z-100"
-            >
-              Ver Documento de Nada Consta
-            </Button>
-          </div>
-
-          {/* Pequena Nota Oficial (alerta azul) */}
-          <Alert severity="info" className="max-w-md">
-            <AlertTitle>Nota Oficial</AlertTitle>
-            Nosso sistema está em atualização para melhor atender a todos. Agradecemos a
-            compreensão.
-          </Alert>
-        </div>
-      </div>
-
-      {/* Modal usando Material UI */}
-      <Dialog
-        open={open}
-        onClose={fecharModal}
-        fullWidth
-        maxWidth="md"
-        disableEnforceFocus
-        disablePortal
-      >
-        <DialogTitle className="flex justify-between items-center">
-          Documento de Nada Consta
-          <IconButton onClick={fecharModal}>
-            <CloseIcon />
-          </IconButton>
-        </DialogTitle>
-        <DialogContent dividers>
-          <iframe
-            src="/documento-nada-consta.pdf"
-            title="Documento de Nada Consta"
-            className="w-full h-[600px] pointer-events-auto"
-            style={{ border: "none" }}
-          />
-        </DialogContent>
-      </Dialog>
-
       {/* Nota Oficial completa */}
       <div className="bg-white text-black p-6 mt-10 mx-4 md:mx-20 mb-10 border-2 border-red-600 rounded-xl">
         <h2 className="text-3xl font-bold text-center mb-6 text-red-600">Nota Oficial</h2>
-        <p className="text-justify leading-relaxed space-y-4">
+        <p className="text-justify leading-relaxed ">
           Em resposta ao comunicado oficial divulgado pela Prefeitura de Belford Roxo em 4 de abril
           de 2025, que aponta supostos indícios de fraude e problemas administrativos na gestão do
           Hospital Central da Baixada Fluminense Ltda., esclarecemos os seguintes pontos:
