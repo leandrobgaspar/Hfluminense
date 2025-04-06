@@ -1,16 +1,5 @@
 // Material UI
 import * as React from "react";
-import { useState } from "react";
-import {
-  Alert,
-  AlertTitle,
-  Button,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  IconButton,
-} from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
 
 function Presentation() {
 
@@ -112,30 +101,6 @@ function Presentation() {
       </div>
 
       {/* Nota Oficial grande */}
-
-      {/* Modal usando Material UI */}
-      <Dialog
-        open={open}
-        onClose={fecharModal}
-        fullWidth
-        maxWidth="md"
-        disableEnforceFocus
-        disablePortal
-      >
-        <DialogTitle className="flex justify-between items-center">
-          Documento de Nada Consta
-          <IconButton onClick={fecharModal}>
-            <CloseIcon />
-          </IconButton>
-        </DialogTitle>
-        <DialogContent dividers>
-          <iframe
-            src="/certidao.pdf"
-            title="Documento de Nada Consta"
-            className="w-full h-[600px]"
-          />
-        </DialogContent>
-      </Dialog>
     </>
   );
 }
