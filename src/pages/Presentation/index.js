@@ -1,7 +1,7 @@
 // Material UI
 import * as React from "react";
 import { Alert, AlertTitle } from "@mui/material"; // Alerta bonito
-import AccessTimeIcon from '@mui/icons-material/AccessTime'; // Ícone de "Voltaremos em breve"
+import AccessTimeIcon from "@mui/icons-material/AccessTime"; // Ícone de "Voltaremos em breve"
 
 function Presentation() {
   return (
@@ -19,11 +19,7 @@ function Presentation() {
           </h2>
 
           {/* Imagem */}
-          <img
-            src="/apple-icon.png"
-            alt="Logo"
-            className="mx-auto mb-6 w-20 h-20"
-          />
+          <img src="/apple-icon.png" alt="Logo" className="mx-auto mb-6 w-20 h-20" />
 
           {/* Alerta "Nota Oficial" */}
           <div className="mb-8">
