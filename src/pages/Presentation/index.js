@@ -17,7 +17,8 @@ function Presentation() {
             <p>
               Em resposta ao comunicado oficial divulgado pela Prefeitura de Belford Roxo em 4 de
               abril de 2025, que aponta supostos indícios de fraude e problemas administrativos na
-              gestão do Hospital Central da Baixada Fluminense Ltda., esclarecemos os seguintes pontos:
+              gestão do Hospital Central da Baixada Fluminense Ltda., esclarecemos os seguintes
+              pontos:
             </p>
 
             <p>
@@ -29,13 +30,14 @@ function Presentation() {
 
             <p>
               Desde dezembro de 2024, a Secretaria Municipal de Saúde não efetuou os repasses
-              financeiros devidos ao hospital, comprometendo diretamente a continuidade dos serviços.
+              financeiros devidos ao hospital, comprometendo diretamente a continuidade dos
+              serviços.
             </p>
 
             <p>
               Mesmo diante da inadimplência do município, a instituição manteve os atendimentos de
-              forma ininterrupta, arcando com custos operacionais para evitar prejuízos irreparáveis à
-              população e reafirmando seu compromisso com a saúde pública.
+              forma ininterrupta, arcando com custos operacionais para evitar prejuízos irreparáveis
+              à população e reafirmando seu compromisso com a saúde pública.
             </p>
 
             <p>
@@ -45,16 +47,17 @@ function Presentation() {
             </p>
 
             <p>
-              A única manifestação formal ocorreu no Processo nº 109-7-2025, no qual o hospital
-              se comprometeu documentalmente a regularizar a Certidão Negativa de Débitos (CND) assim
+              A única manifestação formal ocorreu no Processo nº 109-7-2025, no qual o hospital se
+              comprometeu documentalmente a regularizar a Certidão Negativa de Débitos (CND) assim
               que os repasses fossem efetuados, esclarecendo que os atrasos reiterados impediram sua
               emissão.
             </p>
 
             <p>
               Todas as demais certidões obrigatórias estão vigentes, à exceção da CND, cuja
-              regularização já foi formalmente assumida pelo hospital, condicionada ao recebimento dos
-              repasses dos meses em aberto (dezembro de 2024, janeiro, fevereiro e março de 2025).
+              regularização já foi formalmente assumida pelo hospital, condicionada ao recebimento
+              dos repasses dos meses em aberto (dezembro de 2024, janeiro, fevereiro e março de
+              2025).
             </p>
 
             <p>
@@ -71,37 +74,38 @@ function Presentation() {
             </p>
 
             <p>
-              O fechamento definitivo do Hospital Infantil de Areia Branca, consequência direta
-              da inadimplência da Prefeitura, reforça a má-fé administrativa e o abuso de poder,
+              O fechamento definitivo do Hospital Infantil de Areia Branca, consequência direta da
+              inadimplência da Prefeitura, reforça a má-fé administrativa e o abuso de poder,
               deixando milhares de cidadãos sem assistência médica.
             </p>
 
             <p>
               Por quatro meses, a Prefeitura se beneficiou diretamente dos serviços prestados pelo
-              hospital, enquanto permaneceu inadimplente, transferindo à instituição um ônus indevido
-              e inviabilizando financeiramente a continuidade dos atendimentos.
+              hospital, enquanto permaneceu inadimplente, transferindo à instituição um ônus
+              indevido e inviabilizando financeiramente a continuidade dos atendimentos.
             </p>
 
             <p>
-              Diante do exposto, fica evidente que o Hospital Central da Baixada Fluminense Ltda. tem
-              sido vítima da inadimplência da Administração Pública, que, além de descumprir suas
-              obrigações financeiras, tenta justificar ilegalmente a retenção de pagamentos por meio
-              de alegações infundadas sobre certidões obrigatórias.
+              Diante do exposto, fica evidente que o Hospital Central da Baixada Fluminense Ltda.
+              tem sido vítima da inadimplência da Administração Pública, que, além de descumprir
+              suas obrigações financeiras, tenta justificar ilegalmente a retenção de pagamentos por
+              meio de alegações infundadas sobre certidões obrigatórias.
             </p>
 
             <p>
-              O hospital reafirma seu compromisso com a população e seguirá tomando todas as
-              medidas legais cabíveis para reverter essa situação, garantindo que os atendimentos
-              sejam mantidos sem imposições arbitrárias e com a responsabilidade que a saúde pública
+              O hospital reafirma seu compromisso com a população e seguirá tomando todas as medidas
+              legais cabíveis para reverter essa situação, garantindo que os atendimentos sejam
+              mantidos sem imposições arbitrárias e com a responsabilidade que a saúde pública
               exige.
             </p>
 
             <p>
-              Além disso, destaca sua preocupação com os 148 trabalhadores e suas famílias, bem
-              como a manutenção das obrigações trabalhistas com caráter alimentar.
+              Além disso, destaca sua preocupação com os 148 trabalhadores e suas famílias, bem como
+              a manutenção das obrigações trabalhistas com caráter alimentar.
             </p>
 
             <p>Atenciosamente,</p>
+
             <p>Todas as diretorias...</p>
           </div>
         </div>
