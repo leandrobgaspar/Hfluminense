@@ -1,73 +1,40 @@
+<!--
+=========================================================
+* Material Kit 2 React React - v2.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+Software.
+-->
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Em Manutenção</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen p-4">
-
-  <div class="flex flex-col md:flex-row items-center justify-center space-y-10 md:space-y-0 md:space-x-10">
-    
-    <!-- Imagem do bonequinho -->
-    <div class="max-w-xs">
-      <img src="/maintenance.png" alt="Em Manutenção" class="w-full">
-    </div>
-
-    <!-- Texto -->
-    <div class="text-center md:text-left space-y-6">
-      <div class="flex justify-center md:justify-start mb-6">
-        <!-- Ícone de ferramenta -->
-        <svg class="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12h.01M19 12h.01M9 12h.01M3 12h.01M12 9.01v.01M12 15v.01M12 3v.01M12 21v.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-        </svg>
-      </div>
-
-      <h1 class="text-4xl font-bold">Em Manutenção</h1>
-
-      <p class="text-gray-300 max-w-md">
-        Estamos passando por uma manutenção programada. Voltaremos em breve com novidades!
-      </p>
-
-      <!-- Botão de abrir modal -->
-      <div>
-        <button onclick="abrirModal()" class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition">
-          Ver Documento de Nada Consta
-        </button>
-      </div>
-
-      <!-- Nota oficial -->
-      <p class="text-gray-400 text-sm max-w-md">
-        Nota Oficial: Nosso sistema está em atualização para melhor atender a todos. Agradecemos a compreensão.
-      </p>
-    </div>
-  </div>
-
-  <!-- Modal -->
-  <div id="modal" class="fixed inset-0 bg-black bg-opacity-70 hidden flex items-center justify-center z-50">
-    <div class="bg-white rounded-lg overflow-hidden shadow-lg max-w-3xl w-full">
-      
-      <div class="flex justify-between items-center p-4 bg-blue-600">
-        <h2 class="text-white text-lg font-bold">Documento de Nada Consta</h2>
-        <button onclick="fecharModal()" class="text-white text-2xl">&times;</button>
-      </div>
-
-      <div class="p-4">
-        <iframe src="/certidao.pdf" class="w-full h-[600px]" frameborder="0"></iframe>
-      </div>
-
-    </div>
-  </div>
-
-  <script>
-    function abrirModal() {
-      document.getElementById('modal').classList.remove('hidden');
-    }
-    function fecharModal() {
-      document.getElementById('modal').classList.add('hidden');
-    }
-  </script>
-
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1A73E8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/apple-icon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Hospital Fluminense</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>
