@@ -1,16 +1,38 @@
 // Material UI
 import * as React from "react";
+import { Alert, AlertTitle } from "@mui/material"; // Alerta bonito
+import AccessTimeIcon from '@mui/icons-material/AccessTime'; // Ícone de "Voltaremos em breve"
 
 function Presentation() {
   return (
     <>
       <section className="bg-white dark:bg-gray-900 min-h-screen flex items-center justify-center">
-        <div className="py-8 px-4 mx-auto max-w-screen-md text-center lg:py-16 lg:px-12">
-          <img src="/apple-icon.png" alt="Logo" className="mx-auto mb-6 w-24 h-24" />
-          <h1 className="mb-6 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
-            Nota Oficial
-          </h1>
+        <div className="py-8 px-4 mx-auto max-w-3xl text-center lg:py-16 lg:px-6">
+          {/* Ícone "Voltaremos em Breve" */}
+          <div className="flex justify-center mb-6">
+            <AccessTimeIcon style={{ fontSize: 60 }} className="text-yellow-500" />
+          </div>
 
+          {/* Texto "Voltaremos em Breve" */}
+          <h2 className="mb-4 text-2xl font-semibold text-gray-700 dark:text-gray-300">
+            Voltaremos em Breve
+          </h2>
+
+          {/* Imagem */}
+          <img
+            src="/apple-icon.png"
+            alt="Logo"
+            className="mx-auto mb-6 w-20 h-20"
+          />
+
+          {/* Alerta "Nota Oficial" */}
+          <div className="mb-8">
+            <Alert severity="warning" variant="filled" className="text-2xl font-bold">
+              <AlertTitle>NOTA OFICIAL</AlertTitle>
+            </Alert>
+          </div>
+
+          {/* Texto da Nota */}
           <div className="font-light text-gray-500 md:text-lg xl:text-xl dark:text-gray-400 text-justify space-y-6">
             <p>À REDE GLOBO DE TELEVISÃO</p>
 
