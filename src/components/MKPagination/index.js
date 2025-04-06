@@ -1,30 +1,9 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 import { forwardRef, createContext, useContext } from "react";
-
-// prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
-
-// Custom styles for MKPagination
 import MKPaginationItemRoot from "components/MKPagination/MKPaginationItemRoot";
 
-// The Pagination main context
 const Context = createContext();
 
 const MKPagination = forwardRef(
@@ -68,7 +47,9 @@ const MKPagination = forwardRef(
   }
 );
 
-// Setting default values for the props of MKPagination
+// 🔥 Adicionado
+MKPagination.displayName = "MKPagination";
+
 MKPagination.defaultProps = {
   item: false,
   variant: "gradient",
@@ -78,7 +59,6 @@ MKPagination.defaultProps = {
   placement: "right",
 };
 
-// Typechecking props for the MKPagination
 MKPagination.propTypes = {
   item: PropTypes.bool,
   variant: PropTypes.oneOf(["gradient", "contained"]),

@@ -1,24 +1,5 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 import { forwardRef } from "react";
-
-// prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
-
-// Custom styles for MKBox
 import MKBoxRoot from "components/MKBox/MKBoxRoot";
 
 const MKBox = forwardRef(
@@ -31,7 +12,9 @@ const MKBox = forwardRef(
   )
 );
 
-// Setting default values for the props of MKBox
+// 🔥 Adicionado
+MKBox.displayName = "MKBox";
+
 MKBox.defaultProps = {
   variant: "contained",
   bgColor: "transparent",
@@ -42,7 +25,6 @@ MKBox.defaultProps = {
   coloredShadow: "none",
 };
 
-// Typechecking props for the MKBox
 MKBox.propTypes = {
   variant: PropTypes.oneOf(["contained", "gradient"]),
   bgColor: PropTypes.string,
