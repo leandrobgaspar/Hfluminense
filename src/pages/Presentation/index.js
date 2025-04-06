@@ -10,19 +10,9 @@ import {
   DialogContent,
   IconButton,
 } from "@mui/material";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import CloseIcon from "@mui/icons-material/Close";
 
 function Presentation() {
-  const [open, setOpen] = useState(false);
-
-  const abrirModal = () => {
-    setOpen(true);
-  };
-
-  const fecharModal = () => {
-    setOpen(false);
-  };
 
   return (
     <>
@@ -34,6 +24,9 @@ function Presentation() {
           </div>
 
           {/* Texto e botões */}
+          <div className="text-center  space-y-6">
+           
+          </div>
         </div>
         <div className="text-white p-6 mt-10 mx-4 md:mx-20 mb-10 border-2 border-red-600 rounded-xl">
           <h2 className="text-3xl font-bold text-center mb-6 text-red-600">
