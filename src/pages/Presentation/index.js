@@ -39,10 +39,332 @@ function Presentation() {
     setAnchorElNav(null);
   };
   return (
-    
     <>
       <AppBar position="fixed" variant="gradient" color="info">
-        
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              href="/"
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              <MKBox component="img" src={logoHF} alt="SUS" width="50px" edge="start" href="/" />
+            </Typography>
+            <Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" } }}>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: "block", md: "none" },
+                }}
+              >
+                <MenuItem display="column" onClick={handleCloseNavMenu}>
+                  <AnchorLink href="#Parceiros" color="none">
+                    <MKTypography
+                      variant="button"
+                      fontWeight="bold"
+                      mx={1}
+                      display="flex"
+                      justifyContent="space-between"
+                      alignItems="center"
+                      textTransform="capitalize"
+                      p={1}
+                      sx={({ palette: { grey, dark }, borders: { borderRadius } }) => ({
+                        borderRadius: borderRadius.md,
+                        cursor: "pointer",
+                        transition: "all 300ms linear",
+
+                        "&:hover": {
+                          backgroundColor: grey[200],
+                          color: dark.main,
+
+                          "& *": {
+                            color: dark.main,
+                          },
+                        },
+                      })}
+                    >
+                      Parceiros
+                    </MKTypography>
+                  </AnchorLink>
+                </MenuItem>
+                <MenuItem display="column" onClick={handleCloseNavMenu}>
+                  <AnchorLink
+                    href="#Sobre"
+                    color="none"
+                    mt={10}
+                    display="flex"
+                    justifyContent="right"
+                  >
+                    <MKTypography
+                      variant="button"
+                      fontWeight="bold"
+                      mx={1}
+                      display="flex"
+                      justifyContent="space-between"
+                      alignItems="center"
+                      textTransform="capitalize"
+                      p={1}
+                      sx={({ palette: { grey, dark }, borders: { borderRadius } }) => ({
+                        borderRadius: borderRadius.md,
+                        cursor: "pointer",
+                        transition: "all 300ms linear",
+
+                        "&:hover": {
+                          backgroundColor: grey[200],
+                          color: dark.main,
+
+                          "& *": {
+                            color: dark.main,
+                          },
+                        },
+                      })}
+                    >
+                      Sobre
+                    </MKTypography>
+                  </AnchorLink>
+                </MenuItem>
+                <MenuItem display="column" onClick={handleCloseNavMenu}>
+                  <AnchorLink href="#Avaliacoes">
+                    <MKTypography
+                      variant="button"
+                      fontWeight="bold"
+                      mx={1}
+                      display="flex"
+                      justifyContent="space-between"
+                      alignItems="center"
+                      textTransform="capitalize"
+                      p={1}
+                      sx={({ palette: { grey, dark }, borders: { borderRadius } }) => ({
+                        borderRadius: borderRadius.md,
+                        cursor: "pointer",
+                        transition: "all 300ms linear",
+
+                        "&:hover": {
+                          backgroundColor: grey[200],
+                          color: dark.main,
+
+                          "& *": {
+                            color: dark.main,
+                          },
+                        },
+                      })}
+                    >
+                      Avaliações
+                    </MKTypography>
+                  </AnchorLink>
+                </MenuItem>
+                <MenuItem display="flex" onClick={handleCloseNavMenu}>
+                  <AnchorLink href="#Galeria" color="none" display="flex" justifyContent="right">
+                    <MKTypography
+                      variant="button"
+                      fontWeight="bold"
+                      mx={1}
+                      display="flex"
+                      justifyContent="space-between"
+                      alignItems="center"
+                      textTransform="capitalize"
+                      p={1}
+                      sx={({ palette: { grey, dark }, borders: { borderRadius } }) => ({
+                        borderRadius: borderRadius.md,
+                        cursor: "pointer",
+                        transition: "all 300ms linear",
+
+                        "&:hover": {
+                          backgroundColor: grey[200],
+                          color: dark.main,
+
+                          "& *": {
+                            color: dark.main,
+                          },
+                        },
+                      })}
+                    >
+                      Galeria
+                    </MKTypography>
+                  </AnchorLink>
+                </MenuItem>
+              </Menu>
+            </Box>
+            <Typography
+              variant="h5"
+              noWrap
+              component="a"
+              href=""
+              sx={{
+                mr: 2,
+                display: { xs: "flex", md: "none" },
+                flexGrow: 1,
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              <MKBox component="img" src={logoHF} width="50px" edge="start" href="/" />
+            </Typography>
+
+            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+              <AnchorLink href="#Parceiros" color="none">
+                <MKTypography
+                  variant="button"
+                  fontWeight="bold"
+                  p={1}
+                  color="white"
+                  display="flex"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  textTransform="capitalize"
+                  sx={({ palette: { grey, dark }, borders: { borderRadius } }) => ({
+                    borderRadius: borderRadius.md,
+                    cursor: "pointer",
+                    transition: "all 300ms linear",
+
+                    "&:hover": {
+                      backgroundColor: grey[200],
+                      color: dark.main,
+
+                      "& *": {
+                        color: dark.main,
+                      },
+                    },
+                  })}
+                >
+                  Parceiros
+                </MKTypography>
+              </AnchorLink>
+              <AnchorLink href="#Sobre" color="none">
+                <MKTypography
+                  variant="button"
+                  fontWeight="bold"
+                  p={1}
+                  display="flex"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  textTransform="capitalize"
+                  color="white"
+                  sx={({ palette: { grey, dark }, borders: { borderRadius } }) => ({
+                    borderRadius: borderRadius.md,
+                    cursor: "pointer",
+                    transition: "all 300ms linear",
+
+                    "&:hover": {
+                      backgroundColor: grey[200],
+                      color: dark.main,
+
+                      "& *": {
+                        color: dark.main,
+                      },
+                    },
+                  })}
+                >
+                  Sobre
+                </MKTypography>
+              </AnchorLink>
+              <AnchorLink href="#Avaliacoes" color="none">
+                <MKTypography
+                  variant="button"
+                  fontWeight="bold"
+                  p={1}
+                  display="flex"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  textTransform="capitalize"
+                  color="white"
+                  sx={({ palette: { grey, dark }, borders: { borderRadius } }) => ({
+                    borderRadius: borderRadius.md,
+                    cursor: "pointer",
+                    transition: "all 300ms linear",
+
+                    "&:hover": {
+                      backgroundColor: grey[200],
+                      color: dark.main,
+
+                      "& *": {
+                        color: dark.main,
+                      },
+                    },
+                  })}
+                >
+                  Avaliações
+                </MKTypography>
+              </AnchorLink>
+              <AnchorLink href="#Galeria" color="none">
+                <MKTypography
+                  variant="button"
+                  fontWeight="bold"
+                  p={1}
+                  display="flex"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  textTransform="capitalize"
+                  color="white"
+                  sx={({ palette: { grey, dark }, borders: { borderRadius } }) => ({
+                    borderRadius: borderRadius.md,
+                    cursor: "pointer",
+                    transition: "all 300ms linear",
+
+                    "&:hover": {
+                      backgroundColor: grey[200],
+                      color: dark.main,
+
+                      "& *": {
+                        color: dark.main,
+                      },
+                    },
+                  })}
+                >
+                  Galeria
+                </MKTypography>
+              </AnchorLink>
+            </Box>
+            <MKButton
+              type="submit"
+              href="#Trabalhe"
+              variant="gradient"
+              color="info"
+              sx={{ mr: 2 }}
+              mx={0}
+            >
+              Trabalhe Conosco
+            </MKButton>
+            <MKButton type="submit" href="#Contato" variant="gradient" color="info" mx={0}>
+              Contato
+            </MKButton>
+          </Toolbar>
+        </Container>
       </AppBar>
       <MKBox
         minHeight="75vh"
